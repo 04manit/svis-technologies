@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer">
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js"
+        integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="assets/wowjs/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="assets/wowjs/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+
+<body>
+    <audio src="synthesize.mp3" autoplay></audio>
+
+    <div class="left_panel">
+        <div class="user">
+            <button style="--order:1;" id="user_button_1"><a href="index.html"><i class="fa fa-user"></i></a></button>
+        </div>
+
+        <div class="user">
+            <button style="--order:2;" id="user_button_2"><a href="topics_word_search.html"><i
+                        class="fa fa-puzzle-piece"></i></a></button>
+        </div>
+
+        <div class="user">
+            <button style="--order:3;" id="user_button_3"><i class="fa fa-envelope"></i></button>
+        </div>
+
+        <div class="user">
+            <button style="--order:4;" id="user_button_4"><i class="fab fa-instagram"></i></button>
+        </div>
+    </div>
+
+
+    <div id="particles-js">
+        <div class="col-md-12 header">
+            <div class="col-md-5">
+                <img id="header_img" src="animation_500_ksg9tg59.gif" alt="">
+            </div>
+
+            <div class="col-md-3">
+                <!-- <h1>AI</h1> -->
+                <img class="animate__animated animate__flash animate__infinite" src="Picture1 AI.png" alt="">
+            </div>
+
+            <div class="col-md-4">
+                <h2 class="animate__animated animate__fadeInRight">"WE ARE CHANGING<br>THE WORLD
+                    WITH<br>TECHNOLOGY."<br><span>- Bill Gates</span></h2>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+
+
+    <div class="scroll">
+        <h1>Artificial Intelligence is the Future</h1>
+    </div>
+
+
+
+    <div class="ai-games col-md-12">
+        <div class="col-md-8 game">
+            <div style="display: flex; flex-flow: column; justify-content: center;" class="custom-div">
+                <h3 class="btn btn-info ai-heading">AI Filter Web App</h3>
+            </div>
+
+            <div class="margin">
+
+                <button class="game_buttons btn btn-success" onclick="take_snapshot()">Take snapshot</button>
+                <button class="game_buttons btn btn-success" onclick="start()">Start</button>
+                <button class="game_buttons btn btn-success"
+                    onclick="alert('Refresh your page to Reset')">Restart</button>
+
+                <div class="custom-buttons">
+                    <button onclick="obj='cap'; gotPoses()" class="btn btn-primary">Cap</button>
+                    <button onclick="obj='pagdi'; gotPoses()" class="btn btn-primary">Pagdi</button>
+                    <button onclick="obj='goggles'; gotPoses()" class="btn btn-primary">Goggles</button>
+                    <button onclick="obj='bindi'; gotPoses()" class="btn btn-primary">Bindi</button>
+                    <button onclick="obj='necklace'; gotPoses()" class="btn btn-primary">Necklace</button>
+                    <button onclick="obj='bird'; gotPoses()" class="btn btn-primary">Bird on shoulder</button>
+                    <button onclick="obj='all'; gotPoses()" class="btn btn-primary">All</button>
+                </div>
+
+
+                <div style="margin-top: 20px;" class="custom-img">
+                    <img id="monitor" src="monitor.png" alt="">
+                    <p
+                        style="text-align: center; font-size: 30px; margin-top: 50px; margin-left: 30px; color: #ffffff;">
+                        Change your looks<br>with this<br>Filter App.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="robot_container col-md-4">
+            <img src="walking.gif" alt="">
+        </div>
+    </div>
+
+
+    <div class="features-contaioner col-md-12">
+        <h1>Main features of AI</h1>
+
+        <div class="features-container-button">
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+
+                        <button class="btn_1">
+                            <img src="deep-learning.png" alt="">
+                            Deep Learning
+                        </button>
+
+                    </div>
+
+                    <div class="flip-card-back">
+                        <button>More Details</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+
+                        <button class="btn_2">
+                            <img src="facial-recognition.png" alt="">
+                            Facial Recognition
+                        </button>
+
+                    </div>
+
+                    <div class="flip-card-back">
+                        <button>More Details</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+
+                        <button class="btn_3">
+                            <img src="cloud-service.png" alt="">
+                            Cloud Computing
+                        </button>
+
+                    </div>
+
+                    <div class="flip-card-back">
+                        <button>More Details</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+
+                        <button class="btn_4">
+                            <img src="chatbot.png" alt="">
+                            <p>Chatbots</p>
+                        </button>
+
+                    </div>
+
+                    <div class="flip-card-back">
+                        <button>More Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-12 cards-outer-container">
+        <div class="color"></div>
+
+        <div class="wow animate__animated animate__fadeInUp cards-container-1">
+            <div class="card1 cards">
+                <img src="history.png" alt="">
+                <h3>History of Artificial Intelligence</h3>
+                <h4>Artificial Intelligence is not a new word and not a new technology for researchers. This technology
+                    is much older than you would imagine. Even there are the myths of Mechanical men in Ancient Greek
+                    and Egyptian Myths.</h4>
+            </div>
+
+            <div class="card2 cards">
+                <img src="what is ai.png" alt="">
+                <h3>What is Artificial Intelligence</h3>
+                <h4>Artificial intelligence (AI) is a wide-ranging branch of computer science concerned with building
+                    smart machines capable of performing tasks that typically require human intelligence.</h4>
+            </div>
+
+            <div class="card3 cards">
+                <img src="stages of ai.png" alt="">
+                <h3>Stages of Artificial Intelligence</h3>
+                <h4>AI is divided broadly into three stages: artificial narrow intelligence (ANI), artificial general
+                    intelligence (AGI) and artificial super intelligence (ASI). ASI is the final stage of the
+                    intelligence explosion, in which AI surpasses human intelligence across all fields.</h4>
+            </div>
+
+            <div class="card4 cards">
+                <img src="types of ai.png" alt="">
+                <h3>Types of AI</h3>
+                <h4>There are 4 Types of Artificial Intelligence :-
+                    <ul>
+                        <li>Reactive machines</li>
+                        <li>Limited Memory Machines</li>
+                        <li>Theory of Mind</li>
+                        <li>Seld-aware Artificial Intelligence</li>
+                    </ul>
+                </h4>
+            </div>
+        </div>
+
+
+        <div class="wow animate__animated animate__fadeInDown cards-container-2">
+            <div class="card5 cards">
+                <img src="uses of ai.png" alt="">
+                <h3>Uses of Artificial Intelligence</h3>
+                <h4>Artificial Intelligence has various applications in today's society. It is becoming essential for
+                    today's time because it can solve complex problems with an efficient way in multiple industries,
+                    such as Healthcare, entertainment, finance, education, etc. AI is making our daily life more
+                    comfortable and fast.</h4>
+            </div>
+
+            <div class="card6 cards">
+                <img src="machine learning.png" alt="">
+                <h3>What is Machine Learning</h3>
+                <h4>Machine learning is a branch of artificial intelligence (AI) and computer science which focuses on
+                    the use of data and algorithms to imitate the way that humans learn, gradually improving its
+                    accuracy. It is seen as a part of artificial intelligence.</h4>
+            </div>
+
+            <div class="card7 cards">
+                <img src="future of ai.png" alt="">
+                <h3>Future of AI</h3>
+                <h4>Artificial intelligence is impacting the future of virtually every industry and every human being.
+                    Artificial intelligence has acted as the main driver of emerging technologies like big data,
+                    robotics and IoT, and it will continue to act as a technological innovator for the foreseeable
+                    future.</h4>
+            </div>
+
+            <div class="card8 cards">
+                <img src="human vs ai.png" alt="">
+                <h3>Humans vs Artificial Intelligence</h3>
+                <h4>The question between artificial intelligence and human intelligence is not a matter of ‘who will
+                    win?’ but how are they connected, and how will they co-exist? AI programs may mimic or simulate
+                    cognitive behaviours or traits associated with human intelligence such as reasoning, problem solving
+                    and learning.</h4>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer col-md-12">
+        <div class="footer_heading col-md-12">
+            <h1>AI &nbsp;&nbsp;&nbsp;Technologies</h1>
+        </div>
+
+        <div class="col-md-12 footer_links">
+            <button style="background-color: #3B5695;" class="animate__animated animate__pulse footer_links_buttons"><i
+                    class="fab fa-facebook"></i></button>
+            <button style="background-color: #009CED;" class="footer_links_buttons"><i
+                    class="fab fa-twitter"></i></button>
+            <button style="background-color: #F64E88;" class="footer_links_buttons"><i
+                    class="fab fa-instagram"></i></button>
+            <button style="background-color: #ffa500;" class="footer_links_buttons"><i
+                    class="fab fa-google"></i></button>
+            <button style="background-color: #4D90F6;" class="footer_links_buttons"><i
+                    class="fab fa-skype"></i></button>
+        </div>
+
+        <div class="col-md-12 copyright">
+            <h3>Created By: Manit Singhal (Sun Valley International School), &copy; 2021. All rights reserved.</h3>
+        </div>
+
+    </div>
+
+
+
+    <script type="text/javascript" src="assets/js/particles.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+    <script src="main.js"></script>
+    
+
+
+
+</body>
+
+
+</html>
