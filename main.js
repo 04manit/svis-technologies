@@ -9,12 +9,12 @@ var nose_x_pagdi=0, nose_y_pagdi=0;
 var nose_x_bird=0, nose_y_bird=0;
 var obj="";
 function preload(){
-    bindi = loadImage("bindi.png");
-    goggles = loadImage("goggles.png");
-    necklace = loadImage("necklace.png");
-    cap = loadImage("cap.PNG");
-    pagdi = loadImage("pagdi.png");
-    bird = loadImage("bird.png");
+    bindi = loadImage("assets/images/bindi.png");
+    goggles = loadImage("assets/images/goggles.png");
+    necklace = loadImage("assets/images/necklace.png");
+    cap = loadImage("assets/images/cap.PNG");
+    pagdi = loadImage("assets/images/pagdi.png");
+    bird = loadImage("assets/images/bird.png");
 }
 function setup(){
     canvas = createCanvas(300,200);
@@ -114,4 +114,7 @@ function draw(){
 }
 function take_snapshot(){
     save('extra_filter_img.png');
+}
+function play_audio(){
+    document.getElementById("audio").play();
 }

@@ -31,10 +31,13 @@
     <script>
         new WOW().init();
     </script>
+    <script src="main.js"></script>
 </head>
 
-<body>
-    <audio src="synthesize.mp3" autoplay></audio>
+<body onload="play_audio()">
+    <audio id="audio" src="assets/images/synthesize.mp3" autoplay>
+        <source src="assets/images/synthesize.mp3">
+    </audio>
 
     <div class="left_panel">
         <div style="--order: 1;" class="boxes box_1">
@@ -69,12 +72,12 @@
     <div id="particles-js">
         <div class="col-md-12 header">
             <div class="col-md-5">
-                <img id="header_img" src="animation_500_ksg9tg59.gif" alt="">
+                <img id="header_img" src="assets/images/animation_500_ksg9tg59.gif" alt="">
             </div>
 
             <div class="col-md-3">
                 <!-- <h1>AI</h1> -->
-                <img class="animate__animated animate__flash animate__infinite" src="Picture1 AI.png" alt="">
+                <img class="animate__animated animate__flash animate__infinite" src="assets/images/Picture1 AI.png" alt="">
             </div>
 
             <div class="col-md-4">
@@ -120,7 +123,7 @@
 
 
                 <div style="margin-top: 20px;" class="custom-img">
-                    <img id="monitor" src="monitor.png" alt="">
+                    <img id="monitor" src="assets/images/monitor.png" alt="">
                     <p
                         style="text-align: center; font-size: 30px; margin-top: 50px; margin-left: 30px; color: #ffffff;">
                         Change your looks<br>with this<br>Filter App.</p>
@@ -129,7 +132,7 @@
         </div>
 
         <div class="robot_container col-md-4">
-            <img src="walking.gif" alt="">
+            <img src="assets/images/walking.gif" alt="">
         </div>
     </div>
 
@@ -144,7 +147,7 @@
                     <div class="flip-card-front">
 
                         <button class="btn_1">
-                            <img src="deep-learning.png" alt="">
+                            <img src="assets/images/deep-learning.png" alt="">
                             Deep Learning
                         </button>
 
@@ -162,7 +165,7 @@
                     <div class="flip-card-front">
 
                         <button class="btn_2">
-                            <img src="facial-recognition.png" alt="">
+                            <img src="assets/images/facial-recognition.png" alt="">
                             Facial Recognition
                         </button>
 
@@ -181,7 +184,7 @@
                     <div class="flip-card-front">
 
                         <button class="btn_3">
-                            <img src="cloud-service.png" alt="">
+                            <img src="assets/images/cloud-service.png" alt="">
                             Cloud Computing
                         </button>
 
@@ -201,7 +204,7 @@
                     <div class="flip-card-front">
 
                         <button class="btn_4">
-                            <img src="chatbot.png" alt="">
+                            <img src="assets/images/chatbot.png" alt="">
                             <p>Chatbots</p>
                         </button>
 
@@ -221,7 +224,7 @@
 
         <div class="wow animate__animated animate__fadeInUp cards-container-1">
             <div class="card1 cards">
-                <img src="history.png" alt="">
+                <img src="assets/images/history.png" alt="">
                 <h3>History of Artificial Intelligence</h3>
                 <h4>Artificial Intelligence is not a new word and not a new technology for researchers. This technology
                     is much older than you would imagine. Even there are the myths of Mechanical men in Ancient Greek
@@ -229,14 +232,14 @@
             </div>
 
             <div class="card2 cards">
-                <img src="what is ai.png" alt="">
+                <img src="assets/images/what is ai.png" alt="">
                 <h3>What is Artificial Intelligence</h3>
                 <h4>Artificial intelligence (AI) is a wide-ranging branch of computer science concerned with building
                     smart machines capable of performing tasks that typically require human intelligence.</h4>
             </div>
 
             <div class="card3 cards">
-                <img src="stages of ai.png" alt="">
+                <img src="assets/images/stages of ai.png" alt="">
                 <h3>Stages of Artificial Intelligence</h3>
                 <h4>AI is divided broadly into three stages: artificial narrow intelligence (ANI), artificial general
                     intelligence (AGI) and artificial super intelligence (ASI). ASI is the final stage of the
@@ -244,7 +247,7 @@
             </div>
 
             <div class="card4 cards">
-                <img src="types of ai.png" alt="">
+                <img src="assets/images/types of ai.png" alt="">
                 <h3>Types of AI</h3>
                 <h4>There are 4 Types of Artificial Intelligence :-
                     <ul>
@@ -260,7 +263,7 @@
 
         <div class="wow animate__animated animate__fadeInDown cards-container-2">
             <div class="card5 cards">
-                <img src="uses of ai.png" alt="">
+                <img src="assets/images/uses of ai.png" alt="">
                 <h3>Uses of Artificial Intelligence</h3>
                 <h4>Artificial Intelligence has various applications in today's society. It is becoming essential for
                     today's time because it can solve complex problems with an efficient way in multiple industries,
@@ -269,7 +272,7 @@
             </div>
 
             <div class="card6 cards">
-                <img src="machine learning.png" alt="">
+                <img src="assets/images/machine learning.png" alt="">
                 <h3>What is Machine Learning</h3>
                 <h4>Machine learning is a branch of artificial intelligence (AI) and computer science which focuses on
                     the use of data and algorithms to imitate the way that humans learn, gradually improving its
@@ -277,7 +280,7 @@
             </div>
 
             <div class="card7 cards">
-                <img src="future of ai.png" alt="">
+                <img src="assets/images/future of ai.png" alt="">
                 <h3>Future of AI</h3>
                 <h4>Artificial intelligence is impacting the future of virtually every industry and every human being.
                     Artificial intelligence has acted as the main driver of emerging technologies like big data,
@@ -286,7 +289,7 @@
             </div>
 
             <div class="card8 cards">
-                <img src="human vs ai.png" alt="">
+                <img src="assets/images/human vs ai.png" alt="">
                 <h3>Humans vs Artificial Intelligence</h3>
                 <h4>The question between artificial intelligence and human intelligence is not a matter of ‘who will
                     win?’ but how are they connected, and how will they co-exist? AI programs may mimic or simulate
@@ -325,7 +328,6 @@
 
     <script type="text/javascript" src="assets/js/particles.js"></script>
     <script type="text/javascript" src="assets/js/app.js"></script>
-    <script src="main.js"></script>
     
 
 
